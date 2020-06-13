@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="wm_back" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#worldClicked" prefHeight="950.0" prefWidth="1950.0" scaleX="1" scaleY="1" stylesheets="@myCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GamePlayController">
+   <children>
+      <Label fx:id="scoreDays" layoutX="942.0" layoutY="12.0" text="Days: 0" />
+      <Button fx:id="pl" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="at" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ua" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="by" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="de" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ru" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ch" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="es" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="be" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="pt" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="gb" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="md" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="al" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="fi" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="se" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="no" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="am" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="kz" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="mn" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="bt" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="kg" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="bn" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="bd" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="af" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ir" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="iq" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="qa" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ae" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="kr" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="jp" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="au" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="pg" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="nz" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ma" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="dz" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ly" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="eg" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="gm" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ne" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="cf" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="sd" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="dj" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="bj" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="cm" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="cd" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ke" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="bi" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ao" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="mz" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="bw" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ls" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="mg" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="is" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="gl" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ca" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="us" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="mx" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="bz" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="co" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ve" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="gy" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ec" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="br" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="bo" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <Button fx:id="ar" centerShape="false" mnemonicParsing="false" onAction="#worldClicked" pickOnBounds="false" scaleShape="false" stylesheets="@myCSS.css" />
+      <TitledPane id="countryInfo" fx:id="statsTlt" layoutX="50.0" layoutY="600.0" prefHeight="300.0" prefWidth="400.0" stylesheets="@myCSS.css" text="World">
+         <content>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="137.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="10.0" prefWidth="241.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="74.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="167.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="118.0" text="Population" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Label>
+                  <Label prefHeight="17.0" prefWidth="115.0" text="Infected" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Label>
+                  <Label prefHeight="17.0" prefWidth="115.0" text="Deaths" textAlignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Label>
+                  <Label fx:id="populationLbl" text="0" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="infectedLbl" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="deathsLbl" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </content>
+      </TitledPane>
+      <ImageView fx:id="planeImg" fitHeight="65.0" fitWidth="64.0" layoutX="30.0" layoutY="24.0" onMouseClicked="#flightsBlocking" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <image>
+            <Image url="@plane_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wallImg" fitHeight="87.0" fitWidth="79.0" layoutX="133.0" layoutY="23.0" onMouseClicked="#abroadingBlocking" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="20.0">
+         <image>
+            <Image url="@wall_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

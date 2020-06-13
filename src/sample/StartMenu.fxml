@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="419.0" prefWidth="629.0" stylesheets="@startMenuCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartMenuController">
+   <children>
+      <BorderPane prefHeight="419.0" prefWidth="629.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label prefHeight="112.0" prefWidth="333.0" text="PJATK Plague" textAlignment="CENTER" BorderPane.alignment="TOP_CENTER">
+               <textFill>
+                  <LinearGradient endX="1.0" startX="1.0" startY="0.5">
+                     <stops>
+                        <Stop color="#ff4040" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Impact" size="12.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <GridPane alignment="CENTER_RIGHT" prefHeight="344.0" prefWidth="464.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="119.0" valignment="CENTER" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="124.0" minHeight="10.0" prefHeight="111.0" valignment="CENTER" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <Button onAction="#quitGameClick" fx:id="quitBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="77.0" prefWidth="248.0" stylesheets="@startMenuCSS.css" text="Quit Game" textAlignment="CENTER" GridPane.rowIndex="1" />
+                  <Button onAction="#startGameClick" fx:id="startBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="77.0" prefWidth="248.0" stylesheets="@startMenuCSS.css" text="Play Game" textAlignment="CENTER" />
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

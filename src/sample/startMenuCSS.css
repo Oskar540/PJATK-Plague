@@ -1,0 +1,25 @@
+.root{
+    -fx-background-image: url("startMenuBack.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+@font-face {
+    font-family: "UrbanJungle";
+	src: url('UrbanJungle.otf');
+}
+.label{
+    -fx-font-size: 52px;
+    -fx-font-family: "UrbanJungle";
+}
+.button{
+    -fx-font-size: 36px;
+    -fx-base: #600000;
+    -fx-focus-color: transparent;
+}
+.button:hover{
+
+}
+.button:focused{
+
+}

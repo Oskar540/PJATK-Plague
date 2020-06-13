@@ -1,0 +1,440 @@
+countries.add(new Country("Polska", "pl", ePopulationSize.medium));
+        countries.add(new Country("Czecho-Slowacja", "at", ePopulationSize.medium));
+        countries.add(new Country("Ukraina", "ua", ePopulationSize.big));
+        countries.add(new Country("Bialorus", "by", ePopulationSize.medium));
+        countries.add(new Country("Niemcy", "de", ePopulationSize.big));
+        countries.add(new Country("Rosja", "ru", ePopulationSize.big));
+        countries.add(new Country("Wlochy", "ch", ePopulationSize.medium));
+        countries.add(new Country("Hiszpania", "es", ePopulationSize.medium));
+        countries.add(new Country("Francja", "be", ePopulationSize.medium));
+        countries.add(new Country("Portugalia", "pt", ePopulationSize.small));
+        countries.add(new Country("Wielka Brytania", "gb", ePopulationSize.medium));
+        countries.add(new Country("Rumunia", "md", ePopulationSize.small));
+        countries.add(new Country("Balkany", "al", ePopulationSize.medium));
+        countries.add(new Country("Finlandia", "fi", ePopulationSize.medium));
+        countries.add(new Country("Szwecja", "se", ePopulationSize.medium));
+        countries.add(new Country("Norwegia", "no", ePopulationSize.medium));
+        countries.add(new Country("Turcja", "am", ePopulationSize.big));
+        countries.add(new Country("Kazachstan", "kz", ePopulationSize.big));
+        countries.add(new Country("Mongolia", "mn", ePopulationSize.big));
+        countries.add(new Country("Chiny", "bt", ePopulationSize.big));
+        countries.add(new Country("Turkmenistan", "kg", ePopulationSize.medium));
+        countries.add(new Country("Filipiny", "bn", ePopulationSize.big));
+        countries.add(new Country("Indie", "bd", ePopulationSize.big));
+        countries.add(new Country("Pakistan", "af", ePopulationSize.medium));
+        countries.add(new Country("Iran", "ir", ePopulationSize.medium));
+        countries.add(new Country("Irak", "iq", ePopulationSize.medium));
+        countries.add(new Country("Arabia Saudyjska", "qa", ePopulationSize.big));
+        countries.add(new Country("Jemen", "ae", ePopulationSize.small));
+        countries.add(new Country("Korea", "kr", ePopulationSize.small));
+        countries.add(new Country("Japonia", "jp", ePopulationSize.big));
+        countries.add(new Country("Australia", "au", ePopulationSize.big));
+        countries.add(new Country("Nowa Gwinea", "pg", ePopulationSize.small));
+        countries.add(new Country("Nowa Zelandia", "nz", ePopulationSize.small));
+        countries.add(new Country("Maroko", "ma", ePopulationSize.medium));
+        countries.add(new Country("Algieria", "dz", ePopulationSize.medium));
+        countries.add(new Country("Libia", "ly", ePopulationSize.medium));
+        countries.add(new Country("Egypt", "eg", ePopulationSize.medium));
+        countries.add(new Country("Mali", "gm", ePopulationSize.medium));
+        countries.add(new Country("Niger", "ne", ePopulationSize.small));
+        countries.add(new Country("Czad", "cf", ePopulationSize.medium));
+        countries.add(new Country("Sudan", "sd", ePopulationSize.medium));
+        countries.add(new Country("Etiopia", "dj", ePopulationSize.small));
+        countries.add(new Country("Afryka Zachodnia", "bj", ePopulationSize.big));
+        countries.add(new Country("Nigeria", "cm", ePopulationSize.medium));
+        countries.add(new Country("Demokratyczna Republika Konga", "cd", ePopulationSize.big));
+        countries.add(new Country("Uganda", "ke", ePopulationSize.small));
+        countries.add(new Country("Tanzania", "bi", ePopulationSize.medium));
+        countries.add(new Country("Angola", "ao", ePopulationSize.medium));
+        countries.add(new Country("Mozambik", "mz", ePopulationSize.small));
+        countries.add(new Country("Namibia", "bw", ePopulationSize.medium));
+        countries.add(new Country("Republika Poludniowej Afryki", "ls", ePopulationSize.medium));
+        countries.add(new Country("Madagaskar", "mg", ePopulationSize.small));
+        countries.add(new Country("Islandia", "is", ePopulationSize.small));
+        countries.add(new Country("Grenlandia", "gl", ePopulationSize.medium));
+        countries.add(new Country("Kanada", "ca", ePopulationSize.big));
+        countries.add(new Country("Stany Zjednoczone", "us", ePopulationSize.big));
+        countries.add(new Country("Meksyk", "mx", ePopulationSize.big));
+        countries.add(new Country("Ameryka Srodkowa", "bz", ePopulationSize.small));
+        countries.add(new Country("Kolumbia", "co", ePopulationSize.medium));
+        countries.add(new Country("Wenezuela", "ve", ePopulationSize.small));
+        countries.add(new Country("Gujana", "gy", ePopulationSize.small));
+        countries.add(new Country("Peru", "ec", ePopulationSize.medium));
+        countries.add(new Country("Brazylia", "br", ePopulationSize.big));
+        countries.add(new Country("Boliwia", "bo", ePopulationSize.medium));
+        countries.add(new Country("Argentyna", "ar", ePopulationSize.big));
+
+        {
+            countries.stream().filter(c -> c.name.equals("Polska")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Czecho-Slowacja")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Ukraina")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Bialorus")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Niemcy")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Czecho-Slowacja")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Niemcy")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Ukraina")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Polska")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Wlochy")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Balkany")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Niemcy")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Polska")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Czecho-Slowacja")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Wlochy")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Francja")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Szwecja")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Ukraina")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Polska")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Czecho-Slowacja")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Bialorus")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Rosja")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Rumunia")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Bialorus")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Polska")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Ukraina")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Rosja")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Rumunia")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Czecho-Slowacja")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Ukraina")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Balkany")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Balkany")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Czecho-Slowacja")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Ukraina")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Turcja")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Wlochy")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Czecho-Slowacja")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Niemcy")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Francja")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Francja")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Wlochy")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Niemcy")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Hiszpania")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Hiszpania")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Francja")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Portugalia")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Portugalia")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Hiszpania")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Szwecja")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Niemcy")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Norwegia")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Finlandia")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Finlandia")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Szwecja")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Norwegia")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Rosja")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.name.equals("Norwegia")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.name.equals("Szwecja")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Finlandia")).findFirst().get(),
+                    countries.stream().filter(c -> c.name.equals("Rosja")).findFirst().get()
+                    ))
+            );
+
+        } //Europe
+        {
+            countries.stream().filter(c -> c.name.equals("Rosja")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("fi")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("no")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("by")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ua")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("am")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("kz")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("mn")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bt")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("kz")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("ru")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bt")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("kg")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("mn")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("ru")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bt")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("kr")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("bt")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("bt")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("kr")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ru")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("mn")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("kz")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("kg")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("af")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bn")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("bn")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("bt")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("pg")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("bd")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("bn")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bt")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("af")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("kg")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("kz")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bt")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("af")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ir")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("af")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("bd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bt")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("kg")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ir")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("ir")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("af")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("am")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("kg")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("iq")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("am")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("al")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ru")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ir")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("iq")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("iq")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("am")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("qa")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ir")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("eg")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("qa")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("iq")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ae")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("ae")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("qa")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("pg")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("bn")).findFirst().get()
+                    ))
+            );
+        } //Asia
+        {
+            countries.stream().filter(c -> c.id.equals("ca")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("us")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("us")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("ca")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("mx")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("mx")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("us")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bz")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("bz")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("mx")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("co")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("co")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("bz")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ve")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("br")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ec")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("ve")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("co")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("br")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("gy")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("ec")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("br")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("co")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bo")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ar")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("ar")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("br")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bo")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ec")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("br")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("ar")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ec")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ve")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("co")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bo")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("gy")).findFirst().get()
+                    ))
+            );
+        } //America
+        {
+            countries.stream().filter(c -> c.id.equals("eg")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("iq")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("qa")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("sd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ly")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("ly")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                countries.stream().filter(c -> c.id.equals("eg")).findFirst().get(),
+                countries.stream().filter(c -> c.id.equals("dz")).findFirst().get(),
+                countries.stream().filter(c -> c.id.equals("ne")).findFirst().get(),
+                countries.stream().filter(c -> c.id.equals("cf")).findFirst().get(),
+                countries.stream().filter(c -> c.id.equals("sd")).findFirst().get()
+                ))
+            );
+            countries.stream().filter(c -> c.id.equals("dz")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("ly")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ne")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("gm")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ma")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("ma")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("dz")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("gm")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("gm")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("ma")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("dz")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ne")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bj")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("ne")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("ly")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("dz")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("gm")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bj")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cm")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cf")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("cf")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("sd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ly")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ne")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cm")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ke")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("sd")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("eg")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ly")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cf")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ke")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("dj")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("bj")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("gm")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ne")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cm")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("cm")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("bj")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ne")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cf")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cd")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("dj")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("sd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ke")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("ke")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("dj")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("sd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cf")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bi")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("cd")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("ke")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cf")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cm")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ao")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("mz")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bi")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("bi")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("ke")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("mz")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("ao")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("cd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("mz")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bw")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("mz")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("bi")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("cd")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ao")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bw")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ls")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("bw")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("ao")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("mz")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("ls")).findFirst().get()
+                    ))
+            );
+            countries.stream().filter(c -> c.id.equals("ls")).findFirst().get().setNeighbours(new HashSet<>(Arrays.asList(
+                    countries.stream().filter(c -> c.id.equals("mz")).findFirst().get(),
+                    countries.stream().filter(c -> c.id.equals("bw")).findFirst().get()
+                    ))
+            );
+        } // Africa
